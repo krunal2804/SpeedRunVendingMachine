@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { IVendingMachine } from "./IVendingMachine";
 import { ethers } from "ethers";
 
-const contractAddress = "0x4f6e1bc44ee6f1dd0951b8e5bde4764055918055"; // Get this from run-dev-node.sh output
+const contractAddress="0xd3430700111e9052ea1d7521b430eaa42f37cbcb"; // Get this from run-dev-node.sh output
 const provider = new ethers.JsonRpcProvider(process.env.NEXT_PUBLIC_RPC_URL || "");
 const privateKey = process.env.NEXT_PUBLIC_PRIVATE_KEY || "";
 const signer = new ethers.Wallet(privateKey, provider);
